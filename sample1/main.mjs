@@ -8,13 +8,16 @@ async function main() {
   // 地図を初期化
   const map = new Y.Map('map');
   const zoomLevel = 17;
-  const lng = 35.7100574;
-  const lat = 139.8107171;
+  const lng = 34.7038830;
+  const lat = 135.4950516;
   map.drawMap(new Y.LatLng(lng, lat), zoomLevel, Y.LayerSetId.NORMAL);
 
   // コントロールの追加
   const sliderZoomControl = new Y.SliderZoomControlVertical();
   map.addControl(sliderZoomControl);
+
+  const centerMarkControl = new Y.CenterMarkControl();
+  map.addControl(centerMarkControl);
 }
 
 main();
