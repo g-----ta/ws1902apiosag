@@ -13,10 +13,14 @@ async function main() {
     lng : 34.7038830,
     lat : 135.4950516
   };
+  const SKYTREE = {
+    lng : 35.7100574,
+    lat : 139.8107171
+  }
   const lng = 34.7038830;
   const lat = 135.4950516;
 
-  map.drawMap(new Y.LatLng(GFO.lng, GFO.lat), zoomLevel, Y.LayerSetId.NORMAL);
+  map.drawMap(new Y.LatLng(SKYTREE.lng, SKYTREE.lat), zoomLevel, Y.LayerSetId.NORMAL);
 
   // コントロールの追加
   const sliderZoomControl = new Y.SliderZoomControlVertical();
